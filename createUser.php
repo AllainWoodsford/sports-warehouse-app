@@ -1,11 +1,11 @@
 <?php
 
 ob_start();
-include_once "components/register.html.php";
+include_once "./components/register.html.php";
 $output = ob_get_clean();
 
 $title = "Sports Warehouse - Register";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 
 
 /**

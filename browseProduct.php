@@ -5,8 +5,8 @@ if($categoryId === null){
     $categoryId = 0;
 }
 //Login to DB
-require_once "classes/DBAccess.php";
-include "templates/connectSQL.php";
+require_once "./classes/DBAccess.php";
+include "./templates/connectSQL.php";
 $sql = "select itemId, itemName, photo, price, salePrice, description from item where item.categoryId = :id limit 30";
 //An All Products link has been pressed 
 if($categoryId == -1){
@@ -26,8 +26,8 @@ if($categoryId != -1){
 $rows = $statement->fetchAll();
 //Some SQL
 
-include_once "components/browse.html.php";
+include_once "./components/browse.html.php";
 $output = ob_get_clean();
 $title = "Sports Warehouse - Products";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 ?>

@@ -2,10 +2,10 @@
 <section class="site-main__input"> 
         <h2><span class="is-blue">Reg<span class="is-orange">ister</span></span></h2> 
         <?php 
-            include "components/error.html.php";
+            include "./error.html.php";
         ?>
            <?php 
-              include "components/success.html.php";
+              include "./success.html.php";
         ?>
         <a href="login.php" class="site-main__branding__wrapper-text" rel="noreferrer">Already have an account? <span class="is-blue"><u>Login instead</u></span></a> 
         <p class="site-main__branding__wrapper-text"><em>please complete the following to register an account </em>below:</p>

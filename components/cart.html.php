@@ -4,7 +4,7 @@ if(!isset($_SESSION))
     session_start();
    
 }
-     include_once "classes/ShoppingCart.php";
+     include_once "../classes/ShoppingCart.php";
      $cart = null;
      $cartCounter = 0;
      $showCart = false;

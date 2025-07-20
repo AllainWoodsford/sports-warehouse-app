@@ -1,5 +1,5 @@
 <?php
-require_once "classes/Auth.php";
+require_once "./classes/Auth.php";
 
 
 if(!isset($_SESSION))
@@ -8,8 +8,8 @@ if(!isset($_SESSION))
    }
    
 Auth::protect();
-require_once("classes/DBAccess.php");
-include  "templates/connectSQL.php";
+require_once("./classes/DBAccess.php");
+include  "./templates/connectSQL.php";
 ob_start();
 
 
@@ -92,10 +92,10 @@ try {
 } catch (Exception $e) {
     $errorMessage = "Something went wrong Try again later!" . $e->getMessage();
 }
-include_once "components/manageProducts.html.php";
+include_once "./components/manageProducts.html.php";
 $output = ob_get_clean();
 $db->disconnect();
 $title = "Sports Warehouse - Manage Products";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 
 ?>

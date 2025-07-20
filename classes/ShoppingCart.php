@@ -1,6 +1,6 @@
 <?php
 require_once "CartItem.php";
-require_once "DBAccess.php";
+require_once "./DBAccess.php";
 class ShoppingCart
 {
 private $_cartItems = [];
@@ -83,7 +83,7 @@ public function setCartItemQuantity($cartItem){
 $ExpiryDate, $FirstName, $LastName, $NameOnCard)
  {
  //database setup and connect
- include "settings/db.php";
+ include "../settings/db.php";
  $db=new DBAccess($dsn, $username, $password);
  $pdo = $db->connect();
  //set up SQL statement to insert order

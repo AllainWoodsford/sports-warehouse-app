@@ -1,7 +1,7 @@
 <?php
-require_once "classes/Auth.php";
-require_once("classes/DBAccess.php");
-   include  "templates/connectSQL.php";
+require_once "./classes/Auth.php";
+require_once("./classes/DBAccess.php");
+   include  "./templates/connectSQL.php";
 
    if(Auth::isLoggedIn())
    {
@@ -23,7 +23,7 @@ if(isset($_POST["submitCreateUser"])){
         //error
         $errorMessage = "Valid username and password are required";
         //display rego form with errors
-        include_once "components/register.html.php";
+        include_once "./components/register.html.php";
     } else {
         //create new user
         //detect collision
@@ -40,20 +40,20 @@ if(isset($_POST["submitCreateUser"])){
                 //An existing user was found collision
                 $errorMessage = "Error registering account! Username already exists!";
                 //display rego form with errors
-                include_once "components/register.html.php";
+                include_once "./components/register.html.php";
             } else {
                 //no collision load login page and register user
                 $newUserId = Auth::createUser($username, $password);
 
                 $successMessage = "New user added successfully, ID: " . strval($newUserId);
-                include_once "components/login.html.php";
+                include_once "./components/login.html.php";
             }
 
         
         } catch (Exception $e) {
             $errorMessage = "Error registering account " . $e->getMessage();
             //display rego form with errors
-            include_once "components/register.html.php";
+            include_once "./components/register.html.php";
           
         }
         //Disp
@@ -63,13 +63,13 @@ if(isset($_POST["submitCreateUser"])){
 
 } else {
 
-    include_once "components/register.html.php";
+    include_once "./components/register.html.php";
 }
 
 $output = ob_get_clean();
 
 $title = "Sports Warehouse - Register";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 
 
 /**

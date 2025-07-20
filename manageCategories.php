@@ -1,5 +1,5 @@
 <?php
-require_once "classes/Auth.php";
+require_once "./classes/Auth.php";
 
 
 if(!isset($_SESSION))
@@ -8,8 +8,8 @@ if(!isset($_SESSION))
    }
    
 Auth::protect();
-require_once("classes/DBAccess.php");
-include  "templates/connectSQL.php";
+require_once("./classes/DBAccess.php");
+include  "./templates/connectSQL.php";
 
 $sql = "SELECT categoryId , categoryName from category where categoryId = :id limit 1";
 ob_start();
@@ -94,11 +94,11 @@ try {
     $errorMessage = "Something went wrong adding item to cart! Try again later " . $e->getMessage();
 }
 
-include_once "components/manageCategories.html.php";
+include_once "./components/manageCategories.html.php";
 
 $output = ob_get_clean();
 $db->disconnect();
 $title = "Sports Warehouse - Manage Categories";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 
 ?>

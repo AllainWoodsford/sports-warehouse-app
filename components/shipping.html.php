@@ -1,7 +1,7 @@
 <?php
- include_once "components/checkoutSteps.html.php";
- include_once "components/success.html.php";
- include_once "components/error.html.php";
+ include_once "./checkoutSteps.html.php";
+ include_once "./success.html.php";
+ include_once "./error.html.php";
 ?>
 <section class="site-main__input"> 
         <h2><span class="is-blue">Shipping<span class="is-orange"> Details</span></span></h2> 

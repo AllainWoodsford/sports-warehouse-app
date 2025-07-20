@@ -29,7 +29,7 @@ if(isset($_POST["submitShipping"])){
         //error
         $errorMessage = "Error: Invalid Shipping Details!";
         //display rego form with errors
-        include_once "components/shipping.html.php";
+        include_once "./components/shipping.html.php";
     } else {
         //create new user
         //detect collision
@@ -44,7 +44,7 @@ if(isset($_POST["submitShipping"])){
                     $_SESSION["validShipping"] = serialize(true);
                     $successMessage = "Shipping details saved!";
                 //Redirected on success -> if they are still here its an error 
-                include_once "components/checkout.html.php";
+                include_once "./components/checkout.html.php";
         
         } catch (Exception $e) {
             $errorMessage = "Something went wrong! Please try again later.";
@@ -52,7 +52,7 @@ if(isset($_POST["submitShipping"])){
             if(isset($_SESSION)){
              $_SESSION["validShipping"] = serialize(false);
             }
-            include_once "components/shipping.html.php"; 
+            include_once "./components/shipping.html.php"; 
         }
  
     }
@@ -60,13 +60,13 @@ if(isset($_POST["submitShipping"])){
 
 } else {
  
-    include_once "components/shipping.html.php";
+    include_once "./components/shipping.html.php";
 }
 
 $output = ob_get_clean();
 
 $title = "Sports Warehouse - Shipping Details";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 
 
 /**

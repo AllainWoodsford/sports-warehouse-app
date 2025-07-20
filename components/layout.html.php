@@ -28,17 +28,17 @@ if(isset($_POST["headerCartButton"]) ){
 </head>
 <body>
 <div class="site-wrapper">
-<?php include "components/header.html.php"; ?>
+<?php include "./header.html.php"; ?>
     <main class="site-main">
         <?= $output ?? "no template" ?>
-        <?php include_once "components/cart.html.php"; ?>
+        <?php include_once "./cart.html.php"; ?>
     </main>
- <?php include "components/footer.html.php"; ?>
+ <?php include "./footer.html.php"; ?>
  <!--By AWoodsford Web-UX navy-->
    <?php 
-   include "js/lazyLoadBanner.php"; 
+   include "../js/lazyLoadBanner.php"; 
   ?>
-  <?php include "js/menuButtons.php";
+  <?php include "../js/menuButtons.php";
   ?> 
 </div>  
 </body>

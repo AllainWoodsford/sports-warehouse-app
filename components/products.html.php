@@ -1,5 +1,5 @@
 <?php 
-     include "components/error.html.php";
+     include "./error.html.php";
 ?>
 <section class="site-main__products" aria-description="search results will appear below" aria-label="search results">
 <?php if(empty($rows)): ?>

@@ -6,8 +6,8 @@ session_start();
 
 
 //Login to DB
-require_once "classes/DBAccess.php";
-include "templates/connectSQL.php";
+require_once "./classes/DBAccess.php";
+include "./templates/connectSQL.php";
 
 
 ob_start();
@@ -18,7 +18,7 @@ $sql = "select itemId, itemName, photo, price, salePrice, description from item 
 $rows = $db->executeSQL($sql);
 
 //Load Template
-include_once "components/home.html.php";
+include_once "./components/home.html.php";
 
 
 
@@ -26,7 +26,7 @@ $output = ob_get_clean();
 
 //Set title and bring in layout
 $title = "Sports Warehouse - Home";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 
 $db->disconnect();
 ?>

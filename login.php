@@ -24,7 +24,7 @@ if(isset($_POST["submitLogin"])){
         //error
         $errorMessage = "Error: Invalid credentials!";
         //display rego form with errors
-        include_once "components/login.html.php";
+        include_once "./components/login.html.php";
     } else {
         //create new user
         //detect collision
@@ -34,12 +34,12 @@ if(isset($_POST["submitLogin"])){
 
                 //Redirected on success -> if they are still here its an error
                 $errorMessage = "Something went wrong! Please try again later.";
-                include_once "components/login.html.php";
+                include_once "./components/login.html.php";
         
         } catch (Exception $e) {
             $errorMessage = "Something went wrong! Please try again later.";
             //display rego form with errors
-            include_once "components/login.html.php"; 
+            include_once "./components/login.html.php"; 
         }
  
     }
@@ -47,13 +47,13 @@ if(isset($_POST["submitLogin"])){
 
 } else {
 
-    include_once "components/login.html.php";
+    include_once "./components/login.html.php";
 }
 
 $output = ob_get_clean();
 
 $title = "Sports Warehouse - Login";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 
 
 /**

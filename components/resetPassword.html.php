@@ -1,9 +1,9 @@
 
 <?php 
-            include "components/error.html.php";
+            include "./error.html.php";
         ?>
            <?php 
-              include "components/success.html.php";
+              include "./success.html.php";
         ?>
 <section class="site-main__input"> 
         <h2><span class="is-blue">Reset <span class="is-orange">password</span></span></h2> 

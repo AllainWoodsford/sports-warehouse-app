@@ -5,7 +5,7 @@ if(!isset($_SESSION))
    
 }
 
-include_once "classes/ShoppingCart.php";
+include_once "./classes/ShoppingCart.php";
 
 ob_start();
 
@@ -40,7 +40,7 @@ if(isset($_POST["submitCheckout"])){
             if(!$validShip){
                 $errorMessage = "Error:Please fill-out or correct your shipping details!";
                 //display rego form with errors
-                include_once "components/checkout.html.php";
+                include_once "./components/checkout.html.php";
 
             } else {
                 $address =  unserialize($_SESSION["fullAddress"]); 
@@ -76,7 +76,7 @@ if(isset($_POST["submitCheckout"])){
 
         
                 //Redirected on success -> if they are still here its an error 
-                include_once "components/checkout.html.php"; 
+                include_once "./components/checkout.html.php"; 
         
         } catch (Exception $e) {
             $errorMessage = "Something went wrong! Please try again later.";
@@ -84,7 +84,7 @@ if(isset($_POST["submitCheckout"])){
             if(isset($_SESSION)){
              $_SESSION["validShipping"] = serialize(false);
             }
-            include_once "components/checkout.html.php"; 
+            include_once "./components/checkout.html.php"; 
         }
  
     }
@@ -92,13 +92,13 @@ if(isset($_POST["submitCheckout"])){
 
 } else {
    
-    include_once "components/checkout.html.php"; 
+    include_once "./components/checkout.html.php"; 
 }
 
 $output = ob_get_clean();
 
 $title = "Sports Warehouse - Checkout";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 
 
 /**

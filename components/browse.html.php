@@ -1,4 +1,4 @@
 <?php
-    include "components/siteMainSubheading.php";
+    include "./siteMainSubheading.php";
 ?>
-<?php include "components/products.html.php" ?>
+<?php include "./products.html.php" ?>

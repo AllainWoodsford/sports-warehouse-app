@@ -1,7 +1,7 @@
 <?php
- include_once "components/checkoutSteps.html.php";
- include_once "components/success.html.php";
- include_once "components/error.html.php";
+ include_once "./checkoutSteps.html.php";
+ include_once "./success.html.php";
+ include_once "./error.html.php";
  $address = "";
  $firstName = "";
  $lastName = "";
@@ -46,7 +46,7 @@
                     <?php endif; ?>
                 </div>
                  <div class="site-main__checkout__column__sub"> 
-                    <?php include_once "components/cartNarrow.html.php" ?>
+                    <?php include_once "./cartNarrow.html.php" ?>
                 </div>
         </div>
         <div class="site-main__checkout__column">

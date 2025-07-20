@@ -1,10 +1,10 @@
 <section class="site-main__inspect-product">
     
 <?php 
-    include "components/error.html.php";
+    include "./error.html.php";
 ?>
 <?php 
-    include "components/success.html.php";
+    include "./success.html.php";
 ?>
 
 <?php if(empty($rows)): ?>

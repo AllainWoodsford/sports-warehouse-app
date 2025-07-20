@@ -1,7 +1,7 @@
 <?php
-require_once "classes/Auth.php";
-require_once("classes/DBAccess.php");
-   include  "templates/connectSQL.php";
+require_once "./classes/Auth.php";
+require_once("./classes/DBAccess.php");
+   include  "./templates/connectSQL.php";
    if(!isset($_SESSION))
    {
    session_start();
@@ -23,7 +23,7 @@ if(isset($_POST["submitResetPassword"]) && isset($_SESSION["username"])){
         //error
         $errorMessage = "Passwords dont match or can't be blank";
         //display rego form with errors
-        include_once "components/resetPassword.html.php";
+        include_once "./components/resetPassword.html.php";
     } else {
         //create new user
         //detect collision
@@ -46,12 +46,12 @@ if(isset($_POST["submitResetPassword"]) && isset($_SESSION["username"])){
 
                 if(Auth::CheckPassword($password, $oldPassword)){
                     $errorMessage = "new password cant be old password";
-                    include_once "components/resetPassword.html.php";
+                    include_once "./components/resetPassword.html.php";
                 } else {
                     $sql = "UPDATE user set user.password =? where userName =?  limit 1";
                     $statement = $db->prepareMultiParamStatement($sql, $hash, 1,  $username, 1 );
                     $successMessage = "password updated successfully!";
-                    include_once "components/resetPassword.html.php";
+                    include_once "./components/resetPassword.html.php";
                 }       
 
             } else {
@@ -59,7 +59,7 @@ if(isset($_POST["submitResetPassword"]) && isset($_SESSION["username"])){
                 //An existing user was found collision
                 $errorMessage = "Current password invalid";
                 //display rego form with errors
-                include_once "components/resetPassword.html.php";
+                include_once "./components/resetPassword.html.php";
                 
 
             }
@@ -68,7 +68,7 @@ if(isset($_POST["submitResetPassword"]) && isset($_SESSION["username"])){
         } catch (Exception $e) {
             $errorMessage = "Something went wrong! Try again later" . $e->getMessage();
             //display rego form with errors
-            include_once "components/resetPassword.html.php";
+            include_once "./components/resetPassword.html.php";
           
         }
         //Disp
@@ -78,13 +78,13 @@ if(isset($_POST["submitResetPassword"]) && isset($_SESSION["username"])){
 
 } else {
 
-    include_once "components/resetPassword.html.php";
+    include_once "./components/resetPassword.html.php";
 }
 
 $output = ob_get_clean();
 
 $title = "Sports Warehouse - Register";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 
 
 /**

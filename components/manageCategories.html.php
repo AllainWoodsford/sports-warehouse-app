@@ -5,8 +5,8 @@ if(!isset($_SESSION))
    
 }
 
-include_once "components/success.html.php";
-include_once "components/error.html.php";   
+include_once "./success.html.php";
+include_once "./error.html.php";   
 
 ?>
 <!-- CART -->
@@ -33,7 +33,7 @@ include_once "components/error.html.php";
             <div class="site-main__cart__wrapper"> 
                <!-- Loop for category items -->      
             <?php 
-                include_once "templates/getCategoriesNoLimit.php";
+                include_once "../templates/getCategoriesNoLimit.php";
                 foreach ($categoryRows as $catRow):
                     $catID = $catRow["categoryId"];
                     $catName = $catRow["categoryName"];

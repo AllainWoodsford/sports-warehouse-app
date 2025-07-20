@@ -1,7 +1,7 @@
 
     <?php
-      include_once "classes/ShoppingCart.php";
-      include_once "classes/Auth.php";
+      include_once "../classes/ShoppingCart.php";
+      include_once "../classes/Auth.php";
         $cart = null;
         $cartCounter = 0;
         $showCart = false;
@@ -150,7 +150,7 @@
             <!--Category Nav-->
             <div role="navigation" class="site-header__category__items" > 
                 <?php 
-                    include "templates/getCategories.php";
+                    include "../templates/getCategories.php";
                     if(!empty($categoryRows)):
                 ?>
                 <?php

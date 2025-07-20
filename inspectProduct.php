@@ -11,11 +11,11 @@ if($itemId === null){
     $itemId = 0;
 }
 //Login to DB
-require_once "classes/DBAccess.php";
+require_once "./classes/DBAccess.php";
 include "templates/connectSQL.php";
 $sql = "select itemId, itemName, photo, price, salePrice, description from item where itemId = :id limit 1";
 //An All Products link has been pressed 
-include_once "classes/ShoppingCart.php";
+include_once "./classes/ShoppingCart.php";
 ob_start();
 try {
     $statement = $db->prepareStatement($sql,':id',$itemId,2);
@@ -81,10 +81,10 @@ try {
 }
 
 
-include_once "components/inspectProduct.html.php";
+include_once "./components/inspectProduct.html.php";
 
 //Output
 $output = ob_get_clean();
 $title = "Sports Warehouse - View Item";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 ?>

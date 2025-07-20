@@ -6,7 +6,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <?php 
     $heading = "Our History";
-    include "siteMainSubheading.php";
+    include "./siteMainSubheading.php";
 ?>
 <p class="site-main__branding__wrapper-text">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Orci a scelerisque purus semper eget duis at tellus. Lacus luctus accumsan tortor posuere. Tortor posuere ac ut consequat semper viverra nam libero justo. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Semper feugiat nibh sed pulvinar proin gravida hendrerit. Turpis massa sed elementum tempus egestas sed. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Volutpat odio facilisis mauris sit amet massa vitae. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Integer eget aliquet nibh praesent tristique.<br/>
@@ -21,7 +21,7 @@ Dictumst quisque sagittis purus sit amet volutpat consequat. Tortor at auctor ur
 </p>
 <?php 
     $heading = "Our Promise";
-    include "siteMainSubheading.php";
+    include "./siteMainSubheading.php";
 ?>
 <p class="site-main__branding__wrapper-text">
 Amet est placerat in egestas erat imperdiet sed euismod nisi. Aliquet bibendum enim facilisis gravida neque convallis a cras. At urna condimentum mattis pellentesque id. Erat imperdiet sed euismod nisi porta lorem mollis. Nulla malesuada pellentesque elit eget gravida cum. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Scelerisque varius morbi enim nunc. Lectus nulla at volutpat diam ut venenatis tellus in. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Proin nibh nisl condimentum id venenatis a. Maecenas accumsan lacus vel facilisis volutpat est velit.
@@ -35,7 +35,7 @@ Ultrices vitae auctor eu augue. Nibh venenatis cras sed felis eget velit. Conval
 </p>
 <?php 
     $heading = "Our Products";
-    include "siteMainSubheading.php";
+    include "./siteMainSubheading.php";
 ?>
 <p class="site-main__branding__wrapper-text">
 Vitae semper quis lectus nulla at. Dolor sit amet consectetur adipiscing elit ut. Diam sollicitudin tempor id eu. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Condimentum vitae sapien pellentesque habitant morbi tristique. Semper quis lectus nulla at volutpat. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Mauris cursus mattis molestie a iaculis at erat pellentesque. Donec ultrices tincidunt arcu non sodales neque. Aliquam sem et tortor consequat id porta nibh venenatis cras. Egestas congue quisque egestas diam in arcu cursus euismod. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Arcu bibendum at varius vel pharetra vel turpis.<br/>

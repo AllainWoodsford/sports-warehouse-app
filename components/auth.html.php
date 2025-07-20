@@ -1,6 +1,6 @@
 <?php 
 
-include_once("classes/Auth.php");
+include_once("../classes/Auth.php");
 $isLoggedIn = Auth::isLoggedIn();
 $myUsername = Auth::getLoggedInUsername();
 

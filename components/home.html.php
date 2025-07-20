@@ -15,15 +15,15 @@
         </div>
         <?php
           $heading = "Featured Products";
-          include "components/siteMainSubheading.php";
+          include "./siteMainSubheading.php";
         ?>
         <!--WHERE PHP TEMPLATE SHOULD LOAD -->
        <?php 
-            include "components/products.html.php";
+            include "./products.html.php";
        ?>
        <?php
           $heading = "Our brands and partnerships";
-          include "components/siteMainSubheading.php";
+          include "./siteMainSubheading.php";
         ?>
      
        <div class="site-main__branding">

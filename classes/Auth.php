@@ -1,6 +1,6 @@
 <?php
 //this class is part of the business layer it uses the DBAccess class
-require_once("DBAccess.php");
+require_once("./DBAccess.php");
 
 class Auth
 {
@@ -27,7 +27,7 @@ class Auth
 		$hash = password_hash($pword, PASSWORD_DEFAULT);
 
 		//get database settings
-		include "settings/db.php";
+		include "../settings/db.php";
 
 		try
 		{	
@@ -71,7 +71,7 @@ class Auth
 		$hash = "";
 	
 		//get database settings
-		include "settings/db.php";
+		include "../settings/db.php";
 		
 		try
 		{	

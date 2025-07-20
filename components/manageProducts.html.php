@@ -5,10 +5,10 @@ if(!isset($_SESSION))
    
 }
 
-include_once "components/success.html.php";
-include_once "components/error.html.php";   
+include_once "./success.html.php";
+include_once "./error.html.php";   
  
-include_once "templates/getCategoriesNoLimit.php";
+include_once "../templates/getCategoriesNoLimit.php";
                
 
 
@@ -86,7 +86,7 @@ include_once "templates/getCategoriesNoLimit.php";
                     <label for="Price">Price:</label>
                         <input aria-label="items actual price" value="" id="Price" type="number" min="1"  step="0.01"   name="Price" placeholder="Enter Price"> 
                     <?php 
-                        include_once "templates/getCategoriesNoLimit.php";
+                        include_once "../templates/getCategoriesNoLimit.php";
                         if(!empty($categoryRows)):
                     ?>
                     <label for="prodCategory">Category:</label>

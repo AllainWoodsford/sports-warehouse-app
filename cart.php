@@ -9,9 +9,9 @@ if(!isset($_SESSION))
 $heading = "View Cart";
 
 //Login to DB
-require_once "classes/DBAccess.php";
-include "templates/connectSQL.php";
-include_once "classes/ShoppingCart.php";
+require_once "./classes/DBAccess.php";
+include "./templates/connectSQL.php";
+include_once "./classes/ShoppingCart.php";
 ob_start();
 
 $removeID = $_GET["removeId"] ?? -1;
@@ -46,10 +46,10 @@ if(isset($_SESSION["cart"])){
     }
 }
 
-include_once "components/cartDetails.html.php";
+include_once "./components/cartDetails.html.php";
 
 //Output
 $output = ob_get_clean();
 $title = "Sports Warehouse - View Cart";
-include_once "components/layout.html.php";
+include_once "./components/layout.html.php";
 ?>

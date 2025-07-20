@@ -1,6 +1,6 @@
 <?php
 //this class is part of the business layer it uses the DBAccess class
-require_once("DBAccess.php");
+require_once("./DBAccess.php");
 class Product
 {
 //private properties
@@ -12,7 +12,7 @@ private $_db;
 public function __construct()
  {
  //get database settings
- include "settings/db.php";
+ include "../settings/db.php";
  try
  {
  //create database object

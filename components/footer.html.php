@@ -33,7 +33,7 @@
                     <h3 class="site-footer__navigation__margin__heading">Product categories</h3>
                     <nav class="site-footer__navigation__margin__links">
                         <?php
-                              include "templates/getCategories.php";
+                              include "../templates/getCategories.php";
                               if(!empty($categoryRows)):
                         ?>
                         <?php 
